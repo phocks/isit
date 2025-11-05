@@ -10,6 +10,7 @@ type Thing =
   | "Saturday"
   | "Sunday";
 
+/** An enum of days. */
 export enum Days {
   Sunday = 0,
   Monday = 1,
