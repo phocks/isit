@@ -1,7 +1,7 @@
 const MILLISECONDS_IN_MINUTE = 60000;
 const MINUTES_IN_HOUR = 60;
 
-type Thing =
+export type Thing =
   | "Monday"
   | "Tuesday"
   | "Wednesday"
