@@ -28,7 +28,7 @@ interface Options {
 }
 
 /** This function returns a boolean if a certain day. */
-export function isit(something: Day, options: Options = {}): boolean {
+export function isit(someDay: Day, options: Options = {}): boolean {
   const offsetHours = options.offsetHours;
   const when = options.when || new Date();
   const localOffset = when.getTimezoneOffset();
@@ -46,5 +46,5 @@ export function isit(something: Day, options: Options = {}): boolean {
     return false;
   }
 
-  return offsetDay === Days[something] || offsetDay === something;
+  return offsetDay === Days[someDay] || offsetDay === someDay;
 }
